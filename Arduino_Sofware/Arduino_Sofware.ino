@@ -31,8 +31,9 @@
   // Peltier effect
   
 
-void full_thermoelectric_Equation(){
+void Seebeck_coefficient_Equation(){
   /*
+   Definition:
      * The Seebeck coefficient (also known as thermopower, thermoelectric power, and thermoelectric sensitivity) of a material 
      * is a measure of the magnitude of an induced thermoelectric voltage in response to a 
      * temperature difference across that material, as induced by the Seebeck effect. The SI unit of the Seebeck coefficient 
@@ -50,22 +51,34 @@ void full_thermoelectric_Equation(){
    *  If the temperature difference ΔT between the two ends of a material is small, 
    *  then the Seebeck coefficient of a material is defined as a equation: 
    *  S = - (delta_V / delta_T).
-  
-  Equations:
-    J = sigma * (-delta_V + E_emf);
-    J = - sigma * delta_V +  sigma * E_emf); // Expansion of equation to help with logistics
-  Where V is the local voltage, and sigma  is the local conductivity.
-  In general, the Seebeck effect is described locally by the 
-  creation of an electromotive field.
+  */
 
-    E_emf = -S * delta_T
+  /*
+  Equations:
+      J = sigma * (-delta_V + E_emf);
+      J = - sigma * delta_V +  sigma * E_emf); // Expansion of equation to help with logistics
+    Where V is the local voltage, and sigma  is the local conductivity.
+      
+    In general, the Seebeck effect is described locally by the 
+    creation of an electromotive field.
+       E_emf = -S * delta_T
+
+  Logic:
     delta_T = T2 - T1; // Temperature difference beatween hot and a cold chambers
     E_emf = -S * delta_T; //  Electromotive field equation
     J = sigma * (-delta_V + E_emf)
-    
+
+  Condition:
    * If the system reaches a steady state, where J = 0,
-   * then the voltage gradient is given simply by: 
+   * then the voltage gradient is given simply by the next equation. 
+
+  Resulting equation:
     -V = S *Delta_T.
+
+  Application:
+    This simple relationship, which does not depend on conductivity,
+    is used in the thermocouple to measure a temperature difference; 
+    an absolute temperature may be found by performing the voltage measurement at a known reference temperature.
     
   */
 }

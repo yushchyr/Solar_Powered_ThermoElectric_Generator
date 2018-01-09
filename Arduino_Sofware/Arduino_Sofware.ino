@@ -43,19 +43,31 @@ void full_thermoelectric_Equation(){
    
    
   /*  
+   History:
+   *  One way to define the Seebeck coefficient is the voltage built up when a small temperature gradient is applied 
+   *  to a material, and when the material has come to a steady state 
+   *  where the current density is zero everywhere. 
+   *  If the temperature difference ΔT between the two ends of a material is small, 
+   *  then the Seebeck coefficient of a material is defined as a equation: 
+   *  S = - (delta_V / delta_T).
+  
   Equations:
     J = sigma * (-delta_V + E_emf);
+    J = - sigma * delta_V +  sigma * E_emf); // Expansion of equation to help with logistics
   Where V is the local voltage, and sigma  is the local conductivity.
   In general, the Seebeck effect is described locally by the 
   creation of an electromotive field.
+
     E_emf = -S * delta_T
-  */
-  delta_T = T2 - T1; // Temperature difference beatween hot and a cold chambers
-  E_emf = -S * delta_T; //  Electromotive field equation
-  J = sigma * (-delta_V + E_emf)
-  /*
+    delta_T = T2 - T1; // Temperature difference beatween hot and a cold chambers
+    E_emf = -S * delta_T; //  Electromotive field equation
+    J = sigma * (-delta_V + E_emf)
+    
    * If the system reaches a steady state, where J = 0,
-   * then the voltage gradient is given simply by the emf: -V = S *Delta T.
+   * then the voltage gradient is given simply by: 
+    -V = S *Delta_T.
+    
+  */
 }
 
 void setup() {

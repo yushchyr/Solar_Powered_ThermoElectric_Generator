@@ -1,3 +1,15 @@
+/*
+ * Authors:
+ *  Roman Yushchyk
+ *  Damien Bolingbroke
+*/
+
+/*
+ * Context:
+   1) Thermoelectric effect
+    a) Seebeck coefficient
+*/
+
 // Constants
   double Speed_Of_Light = 299792458; // Speed of light
   

@@ -96,7 +96,7 @@ void Peltier_effect_Equations(){
    
    The Peltier coefficients represent how much heat is carried per unit charge. 
    Since charge current must be continuous across a junction, the associated heat flow will develop 
-   a discontinuity if are different. 
+   a discontinuity if Pi_A and Pi_B are different. 
    The Peltier effect can be considered as the back-action counterpart to the Seebeck effect 
    (analogous to the back-emf in magnetic induction): if a simple thermoelectric circuit is closed,
    then the Seebeck effect will drive a current, which in turn (by the Peltier effect) will always transfer heat 

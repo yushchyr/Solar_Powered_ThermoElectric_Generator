@@ -7,10 +7,11 @@
 /*
  * Context:
    1) Thermoelectric effect -https://en.wikipedia.org/wiki/Thermoelectric_effect#Seebeck_effect
-      Second Thermoelectric effect link - https://www.eng.famu.fsu.edu/~dommelen/quantum/style_a/nt_pelt.html
+      Second Thermoelectric effect link (More detailed equations) - https://www.eng.famu.fsu.edu/~dommelen/quantum/style_a/nt_pelt.html
       a) Seebeck coefficient - https://en.wikipedia.org/wiki/Seebeck_coefficient
       b) Peltier effect
       c) Thomson effect
+      d) Complete thermoelectric equation
    
 */
 

@@ -117,9 +117,34 @@ void Peltier_effect_Equations(){
     if  Pi_X = TS 
     and Q = (P_A - P_B)*I
    then Q = (T_A * S_A - T_B * S_B)*I
+   
   */
+
 }
 
+void Thomson_effect(){
+  /* 
+  Definition:
+   In different materials, the Seebeck coefficient is not constant in temperature, 
+   and so a spatial gradient in temperature can result in a gradient in the Seebeck coefficient. 
+   If a current is driven through this gradient, then a continuous version of the Peltier effect will occur.
+   This Thomson effect was predicted and subsequently observed by Lord Kelvin (William Thomson) in 1851.
+   It describes the heating or cooling of a current-carrying conductor with a temperature gradient.
+   If a current density J is passed through a homogeneous conductor, 
+   the Thomson effect predicts a heat production rate per unit volume
+ 
+  Equations:
+   q = -K*J*delta_T
+   Where delta_T is a temperature difference gradient.
+   And K is a Thomson's coefficient.
+
+   The Thomson coefficient is related to the Seebeck coefficient as
+   K = T*(delta_S/delta_T)
+
+   This equation, however, neglects Joule heating and ordinary thermal conductivity.
+   
+   */
+}
 void setup() {
   // put your setup code here, to run once:
 

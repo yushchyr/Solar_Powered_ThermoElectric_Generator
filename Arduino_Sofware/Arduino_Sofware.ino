@@ -20,7 +20,7 @@
   float T1; // Concentrator temperature Hight
   float T2; // Coolling side temperature Low
   
-  // Seebeck coefficient
+  // Seebeck coefficient 
   float J; //  The local current density - https://en.wikipedia.org/wiki/Current_density
   float sigma; // Is the local conductivity - https://en.wikipedia.org/wiki/Electrical_conductivity
   float delta_V; // Is the local voltage - https://en.wikipedia.org/wiki/Voltage
@@ -31,7 +31,7 @@
   // Peltier effect
   
 
-void Seebeck_coefficient_Equation(){
+void Seebeck_coefficient_Equations(){
   /*
    Definition:
      * The Seebeck coefficient (also known as thermopower, thermoelectric power, and thermoelectric sensitivity) of a material 
@@ -80,6 +80,43 @@ void Seebeck_coefficient_Equation(){
     is used in the thermocouple to measure a temperature difference; 
     an absolute temperature may be found by performing the voltage measurement at a known reference temperature.
     
+  */
+}
+
+void Peltier_effect_Equations(){
+  /*
+ Definition:
+   The Peltier effect is the presence of heating or cooling at an electrified junction of two different conductors 
+   and is named after French physicist Jean Charles Athanase Peltier, who discovered it in 1834. 
+   When a current is made to flow through a junction between two conductors, A and B,
+   heat may be generated or removed at the junction.
+   The Peltier heat generated at the junction per unit time is
+
+   Q = (Pi_A - Pi_B)*I
+   
+   The Peltier coefficients represent how much heat is carried per unit charge. 
+   Since charge current must be continuous across a junction, the associated heat flow will develop 
+   a discontinuity if are different. 
+   The Peltier effect can be considered as the back-action counterpart to the Seebeck effect 
+   (analogous to the back-emf in magnetic induction): if a simple thermoelectric circuit is closed,
+   then the Seebeck effect will drive a current, which in turn (by the Peltier effect) will always transfer heat 
+   from the hot to the cold junction.
+   The close relationship between Peltier and Seebeck effects can be seen in the direct connection between their coefficients: 
+   
+   Pi_X = TS 
+   
+   A typical Peltier heat pump involves multiple junctions in series, through which a current is driven.
+   Some of the junctions lose heat due to the Peltier effect, while others gain heat. 
+   Thermoelectric heat pumps exploit this phenomenon, as do thermoelectric cooling devices found in refrigerators.
+ 
+ Equations:
+     Pi_X = TS 
+     Q = (P_A - P_B)*I
+
+ Application:
+    if  Pi_X = TS 
+    and Q = (P_A - P_B)*I
+   then Q = (T_A * S_A - T_B * S_B)*I
   */
 }
 

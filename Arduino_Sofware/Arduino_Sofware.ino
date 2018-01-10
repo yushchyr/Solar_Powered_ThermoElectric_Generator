@@ -7,10 +7,11 @@
 /*
  * Context:
    1) Thermoelectric effect -https://en.wikipedia.org/wiki/Thermoelectric_effect#Seebeck_effect
-    a) Seebeck coefficient - https://en.wikipedia.org/wiki/Seebeck_coefficient
-    b) Peltier effect
-    c) Thomson effect
-    
+      Second Thermoelectric effect link - https://www.eng.famu.fsu.edu/~dommelen/quantum/style_a/nt_pelt.html
+      a) Seebeck coefficient - https://en.wikipedia.org/wiki/Seebeck_coefficient
+      b) Peltier effect
+      c) Thomson effect
+   
 */
 
 // Constants
@@ -51,6 +52,7 @@ void Seebeck_coefficient_Equations(){
    *  If the temperature difference ΔT between the two ends of a material is small, 
    *  then the Seebeck coefficient of a material is defined as a equation: 
    *  S = - (delta_V / delta_T).
+   *  WIKI Abstract.
   */
 
   /*
@@ -79,6 +81,7 @@ void Seebeck_coefficient_Equations(){
     This simple relationship, which does not depend on conductivity,
     is used in the thermocouple to measure a temperature difference; 
     an absolute temperature may be found by performing the voltage measurement at a known reference temperature.
+    WIKI Abstract.
     
   */
 }
@@ -131,7 +134,8 @@ void Thomson_effect(){
    This Thomson effect was predicted and subsequently observed by Lord Kelvin (William Thomson) in 1851.
    It describes the heating or cooling of a current-carrying conductor with a temperature gradient.
    If a current density J is passed through a homogeneous conductor, 
-   the Thomson effect predicts a heat production rate per unit volume
+   the Thomson effect predicts a heat production rate per unit volume.
+   WIKI Abstract.
  
   Equations:
    q = -K*J*delta_T
@@ -142,9 +146,32 @@ void Thomson_effect(){
    K = T*(delta_S/delta_T)
 
    This equation, however, neglects Joule heating and ordinary thermal conductivity.
+   WIKI Abstract.
+   */
+}
+
+void complete_thermoelectric equations(){
+  /*
+  Definition:
+   Often, more than one of the above effects is involved in the operation of a real thermoelectric device. 
+   The Seebeck effect, Peltier effect, and Thomson effect can be gathered together in a consistent and rigorous way, described here; 
+   the effects of Joule heating and ordinary heat conduction are included as well. 
+   As stated above, the Seebeck effect generates an electromotive force, leading to the current equation.
+   WIKI Abstract.
+
+  Equations:
+   J = sigma * (-delta_V + E_emf);
+   J = sigma * (-delta_V + -S * delta_T);
+   
+   To describe the Peltier and Thomson effects the flow of energy must be considered.
+   To start, the dynamic case where both temperature and charge may be varying with time can be considered.
+   The full thermoelectric equation for the energy accumulation, e.
+   
+   e = delta * (k *delta_T) - delta *
    
    */
 }
+
 void setup() {
   // put your setup code here, to run once:
 
